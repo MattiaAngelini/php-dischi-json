@@ -1,5 +1,21 @@
+header {
+    height: 100px;
+    background-color: #06131f;
+}
+
+header img {
+    height: 60px;
+    margin-top: 20px;
+}
+
+main {
+    background-color: #1d2d3c;
+}
+
 .ms-card {
     height: 400px;
     width: 300px;
+    background-color: #112030;
+    color: white;
     
 }

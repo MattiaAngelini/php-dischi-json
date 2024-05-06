@@ -15,7 +15,11 @@
 </head>
 <body>
     
-    <header> </header>
+    <header>
+        <div class="container">
+            <img src="./img/logo.png" alt=""> 
+        </div>
+    </header>
     
     <!--CARDS-->
     <div id="app">
@@ -23,13 +27,12 @@
             <section class="container d-flex justify-content-evenly flex-wrap">
 
                 <div v-for="disc in discs" class="ms-card m-4">
-
-                    <img class="img-fluid" :src="disc.poster" alt="">
-
-                    <div> {{ disc.title}}  </div>
-                    <div> {{ disc.author}}  </div>
-                    <div> {{ disc.year}}  </div>
-                              
+                    <img class="img-fluid p-4" :src="disc.poster" alt="">
+                    <div class="text-center">
+                        <div> <b> {{disc.title}} </b> </div>
+                        <div> {{disc.author}}  </div>
+                        <div> <b>{{disc.year}} </b> </div>
+                    </div>                           
                 </div>
 
             </section>
