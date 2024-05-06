@@ -10,7 +10,7 @@ createApp({
     getDiscsFromApi() {
       axios.get('server.php')
         .then((response) => {
-          this.discs = response; 
+          this.discs = response.data; 
           console.log(this.discs)
         });
        

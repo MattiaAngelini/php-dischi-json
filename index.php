@@ -22,7 +22,15 @@
         <main> 
             <section class="container d-flex justify-content-evenly flex-wrap">
 
-                <div class="ms-card m-4"> {{  }} </div>
+                <div v-for="disc in discs" class="ms-card m-4">
+
+                    <img class="img-fluid" :src="disc.poster" alt="">
+
+                    <div> {{ disc.title}}  </div>
+                    <div> {{ disc.author}}  </div>
+                    <div> {{ disc.year}}  </div>
+                              
+                </div>
 
             </section>
         </main>
