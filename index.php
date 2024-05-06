@@ -18,13 +18,15 @@
     <header> </header>
     
     <!--CARDS-->
-    <main> 
-        <section class="container d-flex justify-content-evenly flex-wrap">
+    <div id="app">
+        <main> 
+            <section class="container d-flex justify-content-evenly flex-wrap">
 
-            <div class="ms-card m-4"></div>
+                <div class="ms-card m-4"> {{  }} </div>
 
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
 <script src="js/script.js"></script>
 </body>
